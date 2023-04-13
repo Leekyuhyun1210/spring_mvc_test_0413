@@ -10,11 +10,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Handles requests for the application home page.
  */
 @Controller
+@RequestMapping(value = "/gallery")
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
@@ -41,7 +43,7 @@ public class HomeController {
 		return "image";
 	}
 	
-	@RequestMapping(value = "/board/list")
+	@RequestMapping(value = "/list")
 	public String list() {
 		return "board/list";
 	}
@@ -52,6 +54,16 @@ public class HomeController {
 		model.addAttribute("content", "안녕하세요");
 		
 		return "content";
+	}
+	
+	@RequestMapping(value = "/mvtest")
+	public ModelAndView mvtest() {
+		
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("content", "반갑습니다!");
+		mv.setViewName("mvtest");
+		
+		return mv;
 	}
 	
 }

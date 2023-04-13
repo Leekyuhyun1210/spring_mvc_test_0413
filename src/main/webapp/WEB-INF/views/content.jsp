@@ -4,15 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>이미지 불러오기</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<img src="resources/img/mio.png">
-	
-	<br><br>
-	<hr>
-	
-	<img src="images/puppy.png">
-	
+	글내용 : ${content }
 </body>
 </html>

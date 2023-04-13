@@ -41,4 +41,17 @@ public class HomeController {
 		return "image";
 	}
 	
+	@RequestMapping(value = "/board/list")
+	public String list() {
+		return "board/list";
+	}
+	
+	@RequestMapping(value = "/content")
+	public String content(Model model) {
+		
+		model.addAttribute("content", "안녕하세요");
+		
+		return "content";
+	}
+	
 }

@@ -4,15 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>이미지 불러오기</title>
+<title>글목록 보기</title>
 </head>
 <body>
-	<img src="resources/img/mio.png">
-	
-	<br><br>
-	<hr>
-	
-	<img src="images/puppy.png">
-	
+	저는 list.jsp입니다!
 </body>
 </html>
